@@ -107,6 +107,7 @@ php bin/magento setup:install --base-url="http://dev.magento.com/" --db-host="lo
 ## Disable extension:
 
     php bin/magento module:disable Magento_TwoFactorAuth
+    php bin/magento setup:di:compile
     php bin/magento cache:flush
 
 ## Run These Magento Commands:
